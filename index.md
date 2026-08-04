@@ -33,20 +33,13 @@ layout: default
 
 <div class="section-grid">
   <section class="section-card">
-    <h3>About the Club</h3>
-    <p>We meet regularly to work on layouts, run trains, share techniques, and preserve the traditional charm of Great Western Railway-inspired scenery and signals.</p>
-    <ul>
-      <li>Modular layout planning</li>
-      <li>Scenery workshops</li>
-      <li>Showcase events and open days</li>
-    </ul>
+    <h3>When and Where We Meet</h3>
+    <p>We meet every Tuesday 18:30 - 21:00 and Saturday 09:00 - 13:00.</p>
+    <p>Fox & Hounds Dairy, Crowood Ln, Ramsbury, Wilts, SN8 2HE</p>
   </section>
-
-  <section class="section-card">
-    <h3>Getting Started</h3>
-    <p>From here, you can continue building the site with more pages, images, or event announcements. Jekyll makes it easy to expand with blog posts and gallery pages later.</p>
-    <p><strong>Tip:</strong> Create new placeholder files like <code>layouts.md</code> and <code>events.md</code> in your root folder so these navigation links connect properly when clicked.</p>
-  </section>
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9944.883104670163!2d-1.6050327747172464!3d51.45410282477082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487153100a74abb3%3A0xabef1753274a7d0b!2sRamsbury%20and%20District%20Model%20Railway%20Club!5e0!3m2!1sen!2suk!4v1785877718525!5m2!1sen!2suk" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
 </div>
 
 <section class="section-card" id="contact">
@@ -54,9 +47,7 @@ layout: default
   <p>If you want to add a contact section, use a simple Markdown block or a custom HTML snippet in this page. Keep the design consistent with the classic railway theme by using green and gold accents.</p>
   
   <!-- Map wrapped in its container -->
-  <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9944.883104670163!2d-1.6050327747172464!3d51.45410282477082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487153100a74abb3%3A0xabef1753274a7d0b!2sRamsbury%20and%20District%20Model%20Railway%20Club!5e0!3m2!1sen!2suk!4v1785877718525!5m2!1sen!2suk" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-  </div>
+  
 </section>
 
 <!-- Combined Stylesheet for Navigation, Responsiveness, and General Layout -->
