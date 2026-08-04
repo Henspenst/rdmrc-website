@@ -1,0 +1,18 @@
+title: RDMRC Model Railway Club
+description: A clean, lightweight static site for the RDMRC model railway club.
+url: "https://your-username.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+collections: {}
+
+# GitHub Pages build settings
+# Leave theme unset when using custom layouts and CSS.
+# If you want to use a theme in the future, add:
+# theme: minima
