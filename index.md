@@ -138,7 +138,7 @@ layout: default
   }
 
   .map-container iframe {
-    width: 100%;
+    width: 400px;
     height: 350px; /* Forces height explicitly */
     display: block;
   }
