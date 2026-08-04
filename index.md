@@ -155,7 +155,7 @@ layout: default
   /* Centered Map Container */
   .map-container {
     width: 100%;
-    background: #ffffff;
+    background: #fffbd0;
     padding: 15px;
     border-radius: 8px;
     display: flex;
