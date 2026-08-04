@@ -37,17 +37,19 @@ layout: default
     <p>We meet every Tuesday 18:30 - 21:00 and Saturday 09:00 - 13:00.</p>
     <p>Fox & Hounds Dairy, Crowood Ln, Ramsbury, Wilts, SN8 2HE</p>
   </section>
-  <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9944.883104670163!2d-1.6050327747172464!3d51.45410282477082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487153100a74abb3%3A0xabef1753274a7d0b!2sRamsbury%20and%20District%20Model%20Railway%20Club!5e0!3m2!1sen!2suk!4v1785877718525!5m2!1sen!2suk" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-  </div>
+</div>
+
+<!-- Centered Map Container -->
+<div class="map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9944.883104670163!2d-1.6050327747172464!3d51.45410282477082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487153100a74abb3%3A0xabef1753274a7d0b!2sRamsbury%20and%20District%20Model%20Railway%20Club!5e0!3m2!1sen!2suk!4v1785877718525!5m2!1sen!2suk" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </div>
 
 <section class="section-card" id="contact">
   <h3>Contact</h3>
-  <p>If you want to add a contact section, use a simple Markdown block or a custom HTML snippet in this page. Keep the design consistent with the classic railway theme by using green and gold accents.</p>
-  
-  <!-- Map wrapped in its container -->
-  
+  <ul>
+    <li><strong>Phone:</strong> 12345 67890</li>
+    <li><strong>Email:</strong> test@email.com</li>
+  </ul>
 </section>
 
 <!-- Combined Stylesheet for Navigation, Responsiveness, and General Layout -->
@@ -57,7 +59,6 @@ layout: default
     color: #333333;
     line-height: 1.6;
   }
-
 
   img {
     max-width: 100%;
@@ -88,7 +89,7 @@ layout: default
     gap: 10px;
   }
 
-  /* Button Styling (Railway Theme Ready) */
+  /* Button Styling */
   .mrc-btn {
     background-color: #2c3e50;
     color: #ffffff !important;
@@ -127,20 +128,22 @@ layout: default
     border-radius: 3px;
   }
 
-  /* Map Container & Responsive Styling */
+  /* Centered Map Container */
   .map-container {
     width: 100%;
-    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    line-height: 0; /* Prevents inline spacing bugs under the iframe */
   }
 
   .map-container iframe {
-    width: 400px;
-    height: 350px; /* Forces height explicitly */
+    max-width: 100%;
+    height: 350px;
     display: block;
+    border-radius: 8px;
   }
 
   /* Mobile Responsive Breakpoint (Screens under 768px) */
