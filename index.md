@@ -57,55 +57,65 @@ layout: default
 
 <!-- Stylesheet -->
 <style>
-  body {
+  /* Define your variables here! Change these to tweak the whole site instantly */
+  :root {
+    --light-stone: #B88359;
+    --dark-stone: #936D58;
+    --bevel: 8px; /* Change this number to adjust all rounded corners at once */
+  }
+
+  /* Outer screen background uses Dark Stone */
+  html, body {
+    background-color: var(--dark-stone) !important; 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: #333333;
     line-height: 1.6;
-    background-color: #f0f2f5; /* Optional: Soft background color to make the column pop */
     margin: 0;
     padding: 20px;
+    height: 100%;
   }
 
-  /* Central Column Wrapper */
+  /* Header area - Now uses uniform bevel */
+  .mrc-header {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--light-stone) !important; 
+    padding: 12px 18px;
+    border-radius: var(--bevel); 
+  }
+
+  /* Inner column wrapper - Now uses uniform bevel */
   .page-container {
-    max-width: 600px; /* Controls how wide the column is */
-    margin: 0 auto;    /* Centers the column horizontally */
+    max-width: 600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;         /* Adds clean spacing between sections */
-    background: #fffbd0;
+    gap: 20px;
+    background-color: var(--light-stone) !important; 
+    padding: 25px;
+    border-radius: var(--bevel);       
   }
 
-  /* Style for individual content cards */
+  /* Individual content cards - Transparent so they show the Light Stone */
   .section-card {
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    background: transparent !important; 
+    padding: 0;              
   }
 
   img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
   }
 
-  /* Header & Navigation Layout */
-  .mrc-header {
-    max-width: 800px;
-    margin: 0 auto 20px auto; /* Matches the page container width and centers it */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: #ffffff;
-    padding: 12px 18px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  }
-
+  /* Logo explicitly stripped of bevels */
   .mrc-logo {
     max-height: 100px;
     width: auto;
+    border-radius: 0 !important; /* Forces the logo to remain perfectly square */
   }
 
   .mrc-button-row {
@@ -113,20 +123,22 @@ layout: default
     gap: 10px;
   }
 
-  /* Button Styling */
+  /* Button Styling - Now uses uniform bevel */
   .mrc-btn {
-    background-color: #2c3e50;
+    background-color: var(--dark-stone); /* Fixed var() syntax */
     color: #ffffff !important;
     padding: 8px 14px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: var(--bevel); 
     font-weight: bold;
     font-size: 14px;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, filter 0.2s ease;
   }
 
+  /* Fixed hover state so it actually changes color (slightly darker) */
   .mrc-btn:hover {
-    background-color: #1abc9c;
+    background-color: var(--dark-stone);
+    filter: brightness(0.85); /* Makes the stone color 15% darker on hover */
   }
 
   /* Hidden Checkbox for Mobile Toggle */
@@ -144,38 +156,37 @@ layout: default
     cursor: pointer;
   }
 
+  /* The small lines of the hamburger menu don't use the large uniform bevel */
   .hamburger-icon span {
     display: block;
     height: 3px;
     width: 100%;
     background-color: #2c3e50;
-    border-radius: 3px;
+    border-radius: 3px; 
   }
 
-  /* Centered Map Container */
+  /* Map Container */
   .map-container {
     width: 100%;
-    background: #fffbd0;
-    padding: 15px;
-    border-radius: 8px;
+    background: transparent !important;
     display: flex;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     box-sizing: border-box;
   }
 
+  /* Map Iframe - Now uses uniform bevel */
   .map-container iframe {
     width: 100%;
     max-width: 100%;
     height: 350px;
-    border-radius: 6px;
+    border-radius: var(--bevel);
     display: block;
   }
 
-  /* Mobile Responsive Breakpoint (Screens under 768px) */
+  /* Mobile Responsive Breakpoint */
   @media (max-width: 768px) {
-    body {
-      padding: 10px; /* Reduces outer padding on phones */
+    html, body {
+      padding: 10px;
     }
 
     .hamburger-icon {
