@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 
-@import "assets/css/style.css"
+<link rel="stylesheet" href="assets/css/style.css">
 
 <!-- Navigation & Header Bar -->
 <div class="mrc-header">
