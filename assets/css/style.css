@@ -21,6 +21,13 @@ html, body {
   height: 100%;
 }
 
+.footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--text-light);
+  margin-top: 20px;
+}
+
 /* Header area */
 .mrc-header {
   max-width: 600px;
