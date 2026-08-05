@@ -22,12 +22,32 @@ html, body {
 }
 
 .footer {
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+  background-color: var(--main-surface);
+  padding: 20px 25px;
+  border-radius: var(--bevel);
   text-align: center;
   font-size: 0.9em;
   color: var(--text-light);
-  margin-top: 20px;
+  box-sizing: border-box;
 }
 
+.footer p {
+  margin: 0 0 8px 0;
+}
+
+.footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: filter 0.2s ease;
+}
+
+.footer a:hover {
+  filter: brightness(1.2);
+  text-decoration: underline;
+}
 /* Header area */
 .mrc-header {
   max-width: 600px;
