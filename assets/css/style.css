@@ -37,7 +37,7 @@ html, body {
 }
 
 .footer a {
-  color: var(--text-main); /* Or use inherit so it matches your paragraph text */
+  color: inherit; /* Or use inherit so it matches your paragraph text */
   text-decoration: underline; /* Optional: adds an underline so users know it's clickable */
   display: inline;
   margin: 0;
