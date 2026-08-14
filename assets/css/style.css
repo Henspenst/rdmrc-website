@@ -37,14 +37,12 @@ html, body {
 }
 
 .footer a {
-  color: inherit; /* Or use inherit so it matches your paragraph text */
-  text-decoration: underline; /* Optional: adds an underline so users know it's clickable */
-  display: inline;
-  margin: 0;
+  color: inherit;
+  text-decoration: underline;
 }
 
 .footer a:hover {
-  filter: brightness(0.85);
+  opacity: 0.8;
 }
 
 /* Header area */
