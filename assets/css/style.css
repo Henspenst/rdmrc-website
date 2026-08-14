@@ -29,7 +29,6 @@ html, body {
   border-radius: var(--bevel);
   text-align: center;
   font-size: 0.9em;
-  color: var(--text-light);
   box-sizing: border-box;
 }
 
@@ -38,10 +37,7 @@ html, body {
 }
 
 .footer a {
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: bold;
-  transition: filter 0.2s ease;
+  margin: 0 0 8px 0;
 }
 
 .footer a:hover {
