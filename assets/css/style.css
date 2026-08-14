@@ -37,13 +37,16 @@ html, body {
 }
 
 .footer a {
-  margin: 0 0 8px 0;
+  color: var(--text-main); /* Or use inherit so it matches your paragraph text */
+  text-decoration: underline; /* Optional: adds an underline so users know it's clickable */
+  display: inline;
+  margin: 0;
 }
 
 .footer a:hover {
-  filter: brightness(1.2);
-  text-decoration: underline;
+  filter: brightness(0.85);
 }
+
 /* Header area */
 .mrc-header {
   max-width: 600px;
