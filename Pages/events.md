@@ -6,5 +6,5 @@ permalink: /events/
 
 <section class="section-card">
   <h2>Events</h2>
-  <img src="{{ '/images/construction.webpng' | relative_url }}">
+  <img src="{{ '/images/construction.webp' | relative_url }}">
 </section>
