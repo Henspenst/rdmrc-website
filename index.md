@@ -5,7 +5,7 @@ layout: default
 
 <section class="section-card">
   <h2>Welcome to Ramsbury & District MRC!</h2>
-  <p>Welcome to Ramsbury and District Model Railway Club. We are a friendly bunch who meet every Tuesday evening and Saturday morning in Ramsbury, North East Wiltshire. We currently have projects in both N and 00 gauge as well as a fully operational sound-fitted exhibition layout.</p>
+  <p>Welcome to Ramsbury and District Model Railway Club. We are a friendly bunch who meet every Tuesday evening and Saturday morning in Ramsbury, North East Wiltshire. We currently have work in progress projects in both N and 00 gauge as well as a fully operational sound-fitted N gauge exhibition layout.</p>
 </section>
 
 <section class="section-card">
@@ -22,7 +22,7 @@ layout: default
 <section class="section-card" id="contact">
   <h3>Contact</h3>
   <ul>
-    <li><strong>Phone:</strong> 12345 67890</li>
+    <li><strong>Phone:</strong> 07966 154977</li>
     <li><strong>Email:</strong> test@email.com</li>
   </ul>
 </section>
